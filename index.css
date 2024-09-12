@@ -1,6 +1,5 @@
 body{
     margin: 1px;
-    
 }
 
 div{
@@ -19,27 +18,28 @@ button{
 
 button:hover{
     background-color: lavender;
-    gap:5px
+    gap: 5px;
 }
+
 .hide{
-        position: relative;
-        cursor: pointer;
-        transition: all 0.3s ease; /* Smooth transition */
-  
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition */
 }
+
 .rain-container {
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
-    height: 500px;
+    width: 100vw;
+    height: 100vh;
     pointer-events: none; /* Prevent interaction with falling images */
 }
 
 .falling-image {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 50px;   /* Fixed width */
+    height: 50px;  /* Fixed height */
     object-fit: cover; /* Ensure image fits properly */
 }
 
@@ -53,4 +53,3 @@ button:hover{
         opacity: 0;
     }
 }
-
