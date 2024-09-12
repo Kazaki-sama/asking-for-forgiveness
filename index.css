@@ -38,9 +38,11 @@ button:hover{
 
 .falling-image {
     position: absolute;
-    width: 50px;   /* Fixed width */
-    height: 50px;  /* Fixed height */
+    width: 30px;    /* Smaller width */
+    height: 30px;   /* Smaller height */
     object-fit: cover; /* Ensure image fits properly */
+    max-width: 30px;  /* Enforce maximum width */
+    max-height: 30px; /* Enforce maximum height */
 }
 
 @keyframes fall {
